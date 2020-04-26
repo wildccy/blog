@@ -1,5 +1,5 @@
-@import 'font';
-@import 'scroll';
+@import './font.scss';
+@import './scroll.scss';
 
 * {
   box-sizing: border-box;
@@ -22,8 +22,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
 }
 
 a {

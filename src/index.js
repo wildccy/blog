@@ -1,5 +1,5 @@
 import dva from 'dva';
-import './index.css';
+import './style/index.scss';
 
 const createBrowserHistory = require('history').createBrowserHistory
 

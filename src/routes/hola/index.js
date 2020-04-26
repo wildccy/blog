@@ -32,9 +32,9 @@ export default () => {
         <Icon type="logo-text-combine" size={2} style={{ margin: '.5rem 0 4rem' }} />
         <Desc>
           <span />
-          Collection of my designs, articles and
+          欢迎来到
           <br />
-          open-source programs
+          my designs, articles
         </Desc>
       </Content>
     </View>
