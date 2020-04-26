@@ -1,4 +1,4 @@
-# Cheng
+# ccy
 
 ![]()
 
@@ -6,7 +6,7 @@
 
 Design & development records of personal site
 
-## Dev
+##
 
 先列举下这次个站开发使用到的一些主要的包技术栈：
 
