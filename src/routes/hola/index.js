@@ -20,19 +20,12 @@ const Desc = styled(Typist)`
 export default () => {
   setTitle('Welcome');
 
-  const toIndex = () => {
-    // eslint-disable-next-line no-restricted-globals
-    location.href = '/hola';
-  };
-
   return (
     <View mode="one" type="bottom">
       <Content to="/hola">
-        <Logo size={3} />
-        <Icon type="logo-text-combine" size={2} style={{ margin: '.5rem 0 4rem' }} />
         <Desc>
           <span />
-          欢迎来到
+          😁 欢迎来到
           <br />
           my designs, articles
         </Desc>
