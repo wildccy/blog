@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96a85b90-1b45-40d5-bd7c-e83552b57519" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/setTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/setTitle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -51,11 +49,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/favicon" />
       <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -85,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587872568545</updated>
-      <workItem from="1587872570464" duration="10614000" />
+      <workItem from="1587872570464" duration="12541000" />
     </task>
     <servers />
   </component>
@@ -117,6 +115,10 @@
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
     <state width="1638" height="109" key="GridCell.Tab.0.right/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587899044996" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1587901580456">
+      <screen x="0" y="23" width="1680" height="1002" />
+    </state>
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587901580456" />
     <state x="495" y="288" width="750" height="472" key="find.popup" timestamp="1587893923900">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>

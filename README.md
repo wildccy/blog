@@ -22,4 +22,4 @@ Design & development records of personal site
 
 ## Links
 
-- 🍃 <https://canisminor.cc>
+- 🍃 <http://ccy.life>
