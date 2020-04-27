@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a85b90-1b45-40d5-bd7c-e83552b57519" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/hola/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/hola/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/setTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/setTitle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +79,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -98,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587872568545</updated>
-      <workItem from="1587872570464" duration="14727000" />
+      <workItem from="1587872570464" duration="18426000" />
     </task>
     <servers />
   </component>
@@ -114,22 +110,22 @@
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587896513735" />
-    <state width="1638" height="109" key="GridCell.Tab.0.bottom" timestamp="1587951318559">
+    <state width="1638" height="97" key="GridCell.Tab.0.bottom" timestamp="1587955316540">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="1638" height="109" key="GridCell.Tab.0.bottom/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587951318559" />
-    <state width="1638" height="109" key="GridCell.Tab.0.center" timestamp="1587951318557">
+    <state width="1638" height="97" key="GridCell.Tab.0.bottom/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587955316540" />
+    <state width="1638" height="97" key="GridCell.Tab.0.center" timestamp="1587955316539">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="1638" height="109" key="GridCell.Tab.0.center/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587951318557" />
-    <state width="1638" height="109" key="GridCell.Tab.0.left" timestamp="1587951318557">
+    <state width="1638" height="97" key="GridCell.Tab.0.center/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587955316539" />
+    <state width="1638" height="97" key="GridCell.Tab.0.left" timestamp="1587955316538">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="1638" height="109" key="GridCell.Tab.0.left/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587951318557" />
-    <state width="1638" height="109" key="GridCell.Tab.0.right" timestamp="1587951318558">
+    <state width="1638" height="97" key="GridCell.Tab.0.left/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587955316538" />
+    <state width="1638" height="97" key="GridCell.Tab.0.right" timestamp="1587955316539">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="1638" height="109" key="GridCell.Tab.0.right/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587951318558" />
+    <state width="1638" height="97" key="GridCell.Tab.0.right/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587955316539" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1587901580456">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
