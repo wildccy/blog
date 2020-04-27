@@ -18,18 +18,11 @@ const Desc = styled(Typist)`
 `;
 
 export default () => {
-  setTitle('Welcome');
+  setTitle('Contact');
 
   return (
     <View mode="one" type="bottom">
-      <Content to="/hola">
-        <Desc>
-          <span />
-          😁 欢迎来到
-          <br />
-          my designs, articles
-        </Desc>
-      </Content>
+      <h1>Contact</h1>
     </View>
   );
 };

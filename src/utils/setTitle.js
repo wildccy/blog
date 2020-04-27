@@ -1,3 +1,3 @@
 export default (title) => {
-  document.title = title ? `${title} - Cheng` : title
+  document.title = `${title} - Cheng`
 };

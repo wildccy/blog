@@ -183,9 +183,9 @@ class Style {
   }
 
   calcFontSize(i) {
-    const e = Math.E;
-    const r = (Math.sqrt(5) - 1) / 2;
-    const f = 16 * Math.pow(e, i / 5);
+    const e = Math.E,
+      r = (Math.sqrt(5) - 1) / 2,
+      f = 16 * Math.pow(e, i / 5);
 
     let fontSize = i < 0 ? Math.ceil(f) : Math.floor(f);
     if (fontSize % 2 !== 0) fontSize--;
