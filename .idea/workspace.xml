@@ -61,6 +61,16 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -73,6 +83,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -103,22 +114,22 @@
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587896513735" />
-    <state width="1638" height="109" key="GridCell.Tab.0.bottom" timestamp="1587899044996">
+    <state width="1638" height="109" key="GridCell.Tab.0.bottom" timestamp="1587951318559">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="1638" height="109" key="GridCell.Tab.0.bottom/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587899044996" />
-    <state width="1638" height="109" key="GridCell.Tab.0.center" timestamp="1587899044995">
+    <state width="1638" height="109" key="GridCell.Tab.0.bottom/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587951318559" />
+    <state width="1638" height="109" key="GridCell.Tab.0.center" timestamp="1587951318557">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="1638" height="109" key="GridCell.Tab.0.center/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587899044995" />
-    <state width="1638" height="109" key="GridCell.Tab.0.left" timestamp="1587899044994">
+    <state width="1638" height="109" key="GridCell.Tab.0.center/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587951318557" />
+    <state width="1638" height="109" key="GridCell.Tab.0.left" timestamp="1587951318557">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="1638" height="109" key="GridCell.Tab.0.left/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587899044994" />
-    <state width="1638" height="109" key="GridCell.Tab.0.right" timestamp="1587899044996">
+    <state width="1638" height="109" key="GridCell.Tab.0.left/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587951318557" />
+    <state width="1638" height="109" key="GridCell.Tab.0.right" timestamp="1587951318558">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="1638" height="109" key="GridCell.Tab.0.right/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587899044996" />
+    <state width="1638" height="109" key="GridCell.Tab.0.right/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587951318558" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1587901580456">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
