@@ -18,8 +18,8 @@ Design & development records of personal site
 
 **后端**
 
-- `NodeJs` + `Koa` + `MySQL`
+- `Koa` + `MySQL`
 
 ## Links
 
-- 🍃 <http://ccy.life>
+- 🥥 <http://ccy.life>

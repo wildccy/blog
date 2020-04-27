@@ -1,5 +1,5 @@
 import { Link } from 'dva/router';
-import { Typist, Logo, Icon, View, Style } from '../../components';
+import { Typist, View, Style } from '../../components';
 import styled from 'styled-components';
 import setTitle from '../../utils/setTitle';
 
