@@ -2,28 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a85b90-1b45-40d5-bd7c-e83552b57519" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Tabs/MobileTabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Tabs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/App/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Blog/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Contact/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Home/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Life/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Projects/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Anchor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TitleDecoration/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Home/components/Welcome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tabs/MobileTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs/MobileTabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tabs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/hola/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Hola/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/setTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/setTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/App/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="blog" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,25 +57,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes/Home/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/Home/components" />
       <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/routes/Home" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/favicon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="Docker.Dockerfile">
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -96,6 +108,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -111,46 +124,89 @@
       <option name="presentableId" value="Default" />
       <updated>1587872568545</updated>
       <workItem from="1587872570464" duration="22196000" />
-      <workItem from="1587969926946" duration="4941000" />
+      <workItem from="1587969926946" duration="6932000" />
+      <workItem from="1588050240108" duration="471000" />
+      <workItem from="1588128514157" duration="11511000" />
+      <workItem from="1588733437207" duration="138000" />
+      <workItem from="1588734723200" duration="4000" />
+      <workItem from="1588995873102" duration="4537000" />
+      <workItem from="1589185648428" duration="4533000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="500" y="174" key="#Custom_Plugin_Repositories" timestamp="1589185400415">
+      <screen x="0" y="23" width="1920" height="1030" />
+    </state>
+    <state x="500" y="174" key="#Custom_Plugin_Repositories/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589185400415" />
+    <state x="675" y="115" key="#Dockerfile" timestamp="1588226075390">
+      <screen x="0" y="23" width="1920" height="1030" />
+    </state>
+    <state x="675" y="115" key="#Dockerfile/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1588226075390" />
     <state x="562" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587872681984">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
     <state x="562" y="334" key="#com.intellij.fileTypes.FileTypeChooser/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587872681984" />
-    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587896513735">
-      <screen x="0" y="23" width="1680" height="1002" />
+    <state x="661" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588223413912">
+      <screen x="0" y="23" width="1920" height="1030" />
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587896513735" />
-    <state width="1638" height="97" key="GridCell.Tab.0.bottom" timestamp="1587980911148">
-      <screen x="0" y="23" width="1680" height="1002" />
+    <state x="661" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1588223413912" />
+    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589192310472">
+      <screen x="0" y="23" width="1920" height="1030" />
+    </state>
+    <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589192310472" />
+    <state width="1878" height="128" key="GridCell.Tab.0.bottom" timestamp="1589191980637">
+      <screen x="0" y="23" width="1920" height="1030" />
     </state>
     <state width="1638" height="97" key="GridCell.Tab.0.bottom/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587980911148" />
-    <state width="1638" height="97" key="GridCell.Tab.0.center" timestamp="1587980911147">
-      <screen x="0" y="23" width="1680" height="1002" />
+    <state width="1878" height="128" key="GridCell.Tab.0.bottom/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589191980637" />
+    <state width="1638" height="97" key="GridCell.Tab.0.bottom/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1588050215952" />
+    <state width="1878" height="128" key="GridCell.Tab.0.center" timestamp="1589191980635">
+      <screen x="0" y="23" width="1920" height="1030" />
     </state>
     <state width="1638" height="97" key="GridCell.Tab.0.center/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587980911147" />
-    <state width="1638" height="97" key="GridCell.Tab.0.left" timestamp="1587980911147">
-      <screen x="0" y="23" width="1680" height="1002" />
+    <state width="1878" height="128" key="GridCell.Tab.0.center/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589191980635" />
+    <state width="1638" height="97" key="GridCell.Tab.0.center/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1588050215911" />
+    <state width="1878" height="128" key="GridCell.Tab.0.left" timestamp="1589191980633">
+      <screen x="0" y="23" width="1920" height="1030" />
     </state>
     <state width="1638" height="97" key="GridCell.Tab.0.left/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587980911147" />
-    <state width="1638" height="97" key="GridCell.Tab.0.right" timestamp="1587980911148">
-      <screen x="0" y="23" width="1680" height="1002" />
+    <state width="1878" height="128" key="GridCell.Tab.0.left/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589191980633" />
+    <state width="1638" height="97" key="GridCell.Tab.0.left/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1588050215910" />
+    <state width="1878" height="128" key="GridCell.Tab.0.right" timestamp="1589191980637">
+      <screen x="0" y="23" width="1920" height="1030" />
     </state>
     <state width="1638" height="97" key="GridCell.Tab.0.right/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587980911148" />
+    <state width="1878" height="128" key="GridCell.Tab.0.right/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589191980637" />
+    <state width="1638" height="97" key="GridCell.Tab.0.right/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1588050215945" />
+    <state x="409" y="148" key="SettingsEditor" timestamp="1589185550628">
+      <screen x="0" y="23" width="1920" height="1030" />
+    </state>
+    <state x="409" y="148" key="SettingsEditor/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589185550628" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1587901580456">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587901580456" />
-    <state x="495" y="288" width="750" height="472" key="find.popup" timestamp="1587981490038">
-      <screen x="0" y="23" width="1680" height="1002" />
+    <state x="566" y="295" width="858" height="486" key="find.popup" timestamp="1588218463325">
+      <screen x="0" y="23" width="1920" height="1030" />
     </state>
     <state x="495" y="288" width="750" height="472" key="find.popup/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587981490038" />
+    <state x="566" y="295" width="858" height="486" key="find.popup/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1588218463325" />
     <state x="722" y="318" width="670" height="676" key="search.everywhere.popup" timestamp="1587980551697">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>

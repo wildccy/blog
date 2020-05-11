@@ -77,13 +77,14 @@ const Tabs = ({ tabs = {}, activeTab = '' }) => {
       </Tab>
     );
   });
+
   return [
     <Link key="logo" to="/">
       <Logo size={2} hover />
-    </Link>,
-    <View key="tabs" delay={500} type={'bottom'}>
-      {MapTabs}
-    </View>,
+      </Link>,
+      <View key="tabs" delay={500} type={'bottom'}>
+        {MapTabs}
+      </View>,
   ];
 };
 

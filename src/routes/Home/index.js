@@ -1,28 +1,70 @@
-import { Link } from 'dva/router';
-import { Typist, View, Style } from '../../components';
-import styled from 'styled-components';
+import { Component } from 'react';
+import {
+  Style,
+  View,
+  TitleDecoration,
+} from '../../components/index';
+import styled, { css } from 'styled-components';
+import Welcome from './components/Welcome';
 import setTitle from '../../utils/setTitle';
 
-const Content = styled(Link)`
-  height: 100vh;
-  width: 100%;
+/// /////////////////////////////////////////////
+// styled
+/// /////////////////////////////////////////////
+
+const HolaView = styled(View)`
+  background: #fff;
+  border-top: solid 0.5px rgba(0, 0, 0, 0.08);
+  padding: 10rem 1rem;
+  overflow: hidden;
+  min-height: 50vh;
+  @media ${Style.media('M')} {
+    padding: 8rem 1rem;
+  }
+  @media ${Style.media('S')} {
+    padding: 6rem 1rem;
+  }
+`;
+
+const Inner = css`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
 
-const Desc = styled(Typist)`
-  text-align: center;
-  ${Style.fontSize(-1, true)};
+const Decoration = styled(TitleDecoration)`
+  margin-left: -2rem;
+  margin-bottom: 1rem;
 `;
 
-export default () => {
-  setTitle('Home');
+const Title = styled.div`
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1px #222;
+  margin-bottom: 8rem;
+  ${Style.fontSize(6)}
+  @media ${Style.media('S')} {
+    ${Style.fontSize(5)}
+  }
+`;
 
-  return (
-    <View mode="one" type="bottom">
-      <h1>Home</h1>
-    </View>
-  );
-};
+/// /////////////////////////////////////////////
+// component
+/// /////////////////////////////////////////////
+
+
+class Home extends Component {
+  componentDidMount() {
+    setTitle('Home');
+  }
+
+
+  render() {
+    return [
+      <Welcome />
+    ];
+  }
+}
+
+export default Home

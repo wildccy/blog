@@ -9,7 +9,7 @@ export default ({app, history}) => {
   const Hola = dynamic({app, component: () => import('./routes/Hola')});
 
 
-  const Home = dynamic({app, component: () => import('./routes/Home')});
+  const Home = dynamic({app, component: () => import('./routes/Home/index')});
   const Blog = dynamic({app, component: () => import('./routes/Blog')});
   const Life = dynamic({app, component: () => import('./routes/Life')});
   const Projects = dynamic({app, component: () => import('./routes/Projects')});

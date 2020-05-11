@@ -1,17 +1,17 @@
 import { Component } from 'react';
-import { Header, Style } from '../../components';
+import { Header } from '../../components';
 import styled from 'styled-components';
 
 /// /////////////////////////////////////////////
 // config
 /// /////////////////////////////////////////////
 
-const navbarTabs = {
+const NAVTABS = {
   home: '/home',
   blog: '/blog',
   life: '/life',
   projects: '/projects',
-  contact: '/contact',
+  contact: '/contact'
 };
 
 const Content = styled.div`
@@ -28,12 +28,11 @@ const Content = styled.div`
 /// /////////////////////////////////////////////
 
 class App extends Component {
-
   render() {
     if (location.pathname === '/') return this.props.children;
     return (
       <div>
-        <Header tabs={navbarTabs} />
+        <Header tabs={NAVTABS} />
         <section>
           <Content>{this.props.children}</Content>
         </section>

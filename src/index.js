@@ -2,7 +2,7 @@ import dva from 'dva';
 import './style/index.scss';
 import router from './router';
 
-const createBrowserHistory = require('history').createBrowserHistory
+const createBrowserHistory = require('history').createBrowserHistory;
 
 // 1. Initialize
 const app = dva({

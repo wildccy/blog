@@ -18,7 +18,7 @@ const Base = styled.button`
   -webkit-appearance: none;
 `;
 
-const Btn = Base.extend`
+const Btn = styled(Base)`
   position: relative;
   transition: all 0.3s ease-in-out;
   z-index: 1;
@@ -43,13 +43,13 @@ const Btn = Base.extend`
   }
 `;
 
-const BlackBtn = Base.extend`
+const BlackBtn = styled(Base)`
   border: none;
   background: #222;
   color: #fff;
 `;
 
-const WhiteBtn = Btn.extend`
+const WhiteBtn = styled(Base)`
   border-color: #fff;
   color: #fff;
   &:before {

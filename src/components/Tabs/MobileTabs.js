@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { Style, MusicSwitch, Logo, View, ScrollToHide } from '../index';
+import { Style, View } from '../index';
 import Motion from '../Motion';
 import { Component } from 'react';
 import { Link } from 'dva/router';
@@ -183,16 +183,12 @@ class MobileTabs extends Component {
 
     const Float = [
       <MenuLogo key="logo">
-        <Logo size={2} color={['#fff']} alpha={0.3} />
-      </MenuLogo>,
-      <MusicSwitch key="switch" maxWidth={0} inMenu />,
+
+      </MenuLogo>
     ];
 
     return (
       <TabView css={Inner}>
-        <ScrollToHide>
-          <Logo size={2} />
-        </ScrollToHide>
         <div>
           <Menu mode="one" reverse={!this.state.showMenu} duration={duration} type="alpha">
             <List
