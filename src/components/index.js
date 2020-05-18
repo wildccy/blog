@@ -9,4 +9,4 @@ export { default as Typist } from './Typist';
 export { default as MobileTabs } from './Tabs/MobileTabs';
 export { default as Icon } from './Icon';
 export { default as TitleDecoration } from './TitleDecoration';
-
+export { default as ScrollToHide } from './ScrollToHide';
