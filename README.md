@@ -1,12 +1,10 @@
 # ccy
 
-
-![](http://qaiuit270.bkt.clouddn.com/171a0e8a20d941ea)
+![](http://qaiuit270.bkt.clouddn.com/mitchell-hollander-hcrTWZeCft8-unsplash.jpg)
 
 ![](http://qaiuit270.bkt.clouddn.com/ccy.life-online-brightgreen.svg)
 
 Design & development records of personal site
-
 ##
 
 **技术栈**

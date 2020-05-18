@@ -4,11 +4,6 @@
     <list default="true" id="96a85b90-1b45-40d5-bd7c-e83552b57519" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tabs/MobileTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs/MobileTabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TitleDecoration/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TitleDecoration/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Home/components/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home/components/Welcome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +116,7 @@
       <workItem from="1588734723200" duration="4000" />
       <workItem from="1588995873102" duration="4537000" />
       <workItem from="1589185648428" duration="10013000" />
-      <workItem from="1589794562330" duration="1335000" />
+      <workItem from="1589794562330" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="feat(home)：🍃">
       <created>1589192354179</created>
@@ -130,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589192354179</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(md)：🥥">
+      <created>1589796253243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589796253243</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +153,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(home)：" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(home)：" />
+    <MESSAGE value="feat(md)：" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(md)：" />
   </component>
   <component name="WindowStateProjectService">
     <state x="500" y="174" key="#Custom_Plugin_Repositories" timestamp="1589185400415">
@@ -171,10 +174,11 @@
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587896513735" />
     <state x="661" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1588223413912" />
-    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589192353992">
-      <screen x="0" y="23" width="1920" height="1030" />
+    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589796253075">
+      <screen x="0" y="23" width="1920" height="1032" />
     </state>
     <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589192353992" />
+    <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589796253074" />
     <state width="1878" height="144" key="GridCell.Tab.0.bottom" timestamp="1589794645841">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>
