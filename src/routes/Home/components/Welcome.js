@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Icon, Style, Typist, View, TitleDecoration } from '../../../components';
+import { Style, Typist, View, TitleDecoration } from '../../../components';
 
 /// /////////////////////////////////////////////
 // styled
@@ -87,8 +87,7 @@ export default () => {
     <WelcomeView css={Inner} type="bottom" duration={5000}>
       <Title key="title">
         <Decoration key="decoration" />
-        <Icon type="logo-text" />
-        <Typist steady>A designer is an emerging synthesis of artist, coder and writer</Typist>
+        <Typist steady>As a programmer,first of all should respect programming,<br/>love to write the program,he is a partner, not a tool.</Typist>
       </Title>
     </WelcomeView>
   );

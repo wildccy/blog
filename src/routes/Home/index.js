@@ -56,7 +56,7 @@ const Title = styled.div`
 
 class Home extends Component {
   componentDidMount() {
-    setTitle('Home');
+    setTitle('Hola');
   }
 
 

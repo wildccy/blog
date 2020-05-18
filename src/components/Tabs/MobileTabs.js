@@ -88,7 +88,7 @@ const Line = styled.span`
   transition: all 0.3s ease-out;
 `;
 
-const SideLine = Line.extend`
+const SideLine = styled(Line)`
   ${props =>
     props.show &&
     css`
@@ -96,7 +96,7 @@ const SideLine = Line.extend`
     `};
 `;
 
-const MidLine = Line.extend`
+const MidLine = styled(Line)`
   &:before {
     display: block;
     content: '';

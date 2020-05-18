@@ -13,7 +13,7 @@ const First = styled.div`
   width: 100%;
 `;
 
-const Second = First.extend`
+const Second = styled(First)`
   text-align: right;
 `;
 

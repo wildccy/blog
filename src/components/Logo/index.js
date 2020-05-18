@@ -15,7 +15,7 @@ const View = styled.div`
   width: ${props => 2 * props.size}rem;
 `;
 
-const HoverView = View.extend`
+const HoverView = styled(View)`
   > div {
     transition: all 0.5s ${Style.ease.normal};
   }
