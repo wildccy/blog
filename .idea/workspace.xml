@@ -174,11 +174,11 @@
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587896513735" />
     <state x="661" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1588223413912" />
-    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589796253075">
+    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589797169965">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>
     <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589192353992" />
-    <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589796253074" />
+    <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589797169965" />
     <state width="1878" height="144" key="GridCell.Tab.0.bottom" timestamp="1589794645841">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>
@@ -207,11 +207,12 @@
       <screen x="0" y="23" width="1920" height="1030" />
     </state>
     <state x="409" y="148" key="SettingsEditor/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589185550628" />
-    <state x="503" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589192368292">
-      <screen x="0" y="23" width="1920" height="1030" />
+    <state x="503" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589797179398">
+      <screen x="0" y="23" width="1920" height="1032" />
     </state>
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587901580456" />
     <state x="503" y="272" key="Vcs.Push.Dialog.v2/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589192368292" />
+    <state x="503" y="272" key="Vcs.Push.Dialog.v2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589797179398" />
     <state x="566" y="295" width="858" height="487" key="find.popup" timestamp="1589286158461">
       <screen x="0" y="23" width="1920" height="1031" />
     </state>
