@@ -8,7 +8,7 @@ import MediaQuery from 'react-responsive';
 /// /////////////////////////////////////////////
 
 const NAVTABS = {
-  home: '/home',
+  hola: '/hola',
   blog: '/blog',
   life: '/life',
   projects: '/projects',
@@ -49,9 +49,9 @@ const ImageCase = styled(Motion)`
   align-items: center;
   justify-content: center;
   background: ${Style.color.bg};
-  z-index: 0;
+  z-index: -1;
   > img {
-    width: 100%;
+    height: 100%;
   }
   @media ${Style.media('M')} {
     height: ${document.body.clientHeight}px;
@@ -91,8 +91,8 @@ const Content = styled.div`
 class App extends Component {
 
   Video = () =>
-    location.pathname === NAVTABS.home ? (
-      <ScrollToHide maxOffset={1000}>
+    location.pathname === NAVTABS.hola ? (
+      <ScrollToHide maxOffset={500}>
         <ImageCase mode="one" type="alpha" duration={1000}>
           <img style={{'opacity':0.3}} src="http://qaiuit270.bkt.clouddn.com/faces.jpg" alt=""/>
           <Explorer key="explorer">

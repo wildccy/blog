@@ -24,7 +24,6 @@ const Title = styled.div`
   i {
     font-size: 8vw;
     line-height: 1.5;
-    transition: font-size 0.3s ease;
     transition: all 0.5s ${Style.ease.normal};
     &:hover {
       color: transparent;
