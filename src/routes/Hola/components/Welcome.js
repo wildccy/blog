@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Style, Typist, View, TitleDecoration } from '../../../components';
+import { Style, Typist, View, TitleDecoration, Icon } from '../../../components';
 
 /// /////////////////////////////////////////////
 // styled
@@ -13,6 +13,10 @@ const Inner = css`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+const TitleIcon = styled.div`
+  margin-top: 10vh;
 `;
 
 const Title = styled.div`
@@ -35,6 +39,7 @@ const Title = styled.div`
     line-height: 1.5 !important;
     text-align: center;
     transition: font-size 0.3s ease;
+    margin-top: 10vh;
   }
   @media ${Style.media('XL')} {
     i {
@@ -62,7 +67,7 @@ const Title = styled.div`
 
 const Decoration = styled(TitleDecoration)`
   position: absolute;
-  left: 0.5rem;
+  left: -4rem;
   top: -2rem;
   @media ${Style.media('XL')} {
     left: -1rem;
@@ -86,7 +91,14 @@ export default () => {
     <WelcomeView css={Inner} type="bottom" duration={5000}>
       <Title key="title">
         <Decoration key="decoration" />
-        <Typist steady>As a programmer,first of all should respect programming,<br/>love to write the program,he is a partner, not a tool.</Typist>
+        <TitleIcon>
+          <Icon type="iconfont icon-title" />
+        </TitleIcon>
+        <Typist steady>
+          What I want to pursue is the technical freedom of programming.<br/>
+          use free time to learn diverse and versatile skills.<br/>
+          do not limit your knowledge system to a specific position
+        </Typist>
       </Title>
     </WelcomeView>
   );

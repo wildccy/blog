@@ -114,7 +114,7 @@ class Hola extends Component {
     return [
       <View key="design" name="design">
         <HolaView css={Inner}>
-          <this.Title title={'design'.toUpperCase()} num={'01'} />
+          {/*<this.Title title={'design'.toUpperCase()} num={'01'} />*/}
           <Design data={database.design} />
         </HolaView>
       </View>

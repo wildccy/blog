@@ -16,7 +16,7 @@ const Icon = ({ size = 1, type = '', ...other }) => {
   } else {
     size = `${size}rem`;
   }
-  const className = ['cm-iconfont', `icon-${type}`].join(' ');
+  const className = ['iconfont', `icon-${type}`].join(' ');
   return <I className={className} size={size} {...other} />;
 };
 

@@ -95,10 +95,6 @@ class App extends Component {
       <ScrollToHide maxOffset={500}>
         <ImageCase mode="one" type="alpha" duration={1000}>
           <img style={{'opacity':0.3}} src="http://qaiuit270.bkt.clouddn.com/faces.jpg" alt=""/>
-          <Explorer key="explorer">
-            <div>Scroll to Explorer</div>
-            <Line />
-          </Explorer>
         </ImageCase>
       </ScrollToHide>
     ) : null;
