@@ -95,9 +95,9 @@ export default () => {
           <Icon type="iconfont icon-title" />
         </TitleIcon>
         <Typist steady>
-          What I want to pursue is the technical freedom of programming.<br/>
+          What I hope to pursue is the technical freedom of programming.<br/>
           use free time to learn diverse and versatile skills.<br/>
-          do not limit your knowledge system to a specific position
+          do not limit own knowledge system to a specific position
         </Typist>
       </Title>
     </WelcomeView>
