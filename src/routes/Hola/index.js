@@ -10,7 +10,8 @@ import styled, { css } from 'styled-components';
 import setTitle from '../../utils/setTitle';
 
 import Welcome from './components/Welcome';
-import Design from "./components/Design";
+import Life from "./components/Life";
+import Toy from './components/Toy'
 
 
 /// /////////////////////////////////////////////
@@ -20,7 +21,7 @@ import Design from "./components/Design";
 const HolaView = styled(View)`
   background: #fff;
   border-top: solid 0.5px rgba(0, 0, 0, 0.08);
-  padding: 7rem 1rem;
+  padding: 7rem 1rem 3rem 1rem;
   overflow: hidden;
   min-height: 50vh;
   @media ${Style.media('M')} {
@@ -74,8 +75,53 @@ const database = {
       type : "fabric",
       to   : "/projects/instant-zine"
     }
+  ],
+  coding : [
+    {
+      cover: "/img/coding-anto.png",
+      title: "anto",
+      desc : "🔵 Sketch Tools for AFUX",
+      type : "sketch plugin",
+      href : "https://github.com/canisminor1990/anto"
+    },
+    {
+      cover: "/img/coding-name.png",
+      title: "sketch-name-organizer",
+      desc :
+        "🖌 Rename and sort artboards based on their x and y position; Rename layers based on their Style and Symbol.",
+      type : "sketch plugin",
+      href : "https://github.com/canisminor1990/sketch-name-organizer"
+    },
+    {
+      cover: "/img/coding-pand.png",
+      title: "panda-design",
+      desc : "🐼 Panda Design React UI Components",
+      type : "react ui-kit",
+      href : "https://github.com/PandaUED/panda-design"
+    },
+    {
+      cover: "/img/coding-anto.png",
+      title: "anto-diff",
+      desc : "🔵 Sketch diff tool",
+      type : "electron",
+      href : "https://github.com/canisminor1990/anto-diff"
+    },
+    {
+      cover: "/img/coding-bilibili.png",
+      title: "bilibili-client",
+      desc : "📺 Bilibili Mini-Client # Mac/Win",
+      type : "electron",
+      href : "https://github.com/canisminor1990/bilibili-client"
+    },
+    {
+      cover: "/img/coding-ffxiv.png",
+      title: "ffxiv-cmskin",
+      desc : "🌱 CanisMinor ActSkin - FFXIV",
+      type : "final fantasy xiv",
+      href : "https://github.com/canisminor1990/ffxiv-cmskin"
+    }
   ]
-}
+};
 
 class Hola extends Component {
 
@@ -97,11 +143,16 @@ class Hola extends Component {
     };
 
     return [
-
-      <View key="design" name="design">
+      <View key="toy" name="toy">
         <HolaView css={Inner}>
-          <HolaTitle title={'toy'.toUpperCase()} num={'02'} />
-          <Design data={database.design} />
+          <HolaTitle title={'life'.toUpperCase()} num={'01'} />
+          <Life data={database.design} />
+        </HolaView>
+      </View>,
+      <View key="life" name="life">
+        <HolaView css={Inner}>
+          <HolaTitle title={'life'.toUpperCase()} num={'02'} />
+          <Toy data={database.coding} />
         </HolaView>
       </View>
     ]

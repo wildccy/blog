@@ -4,7 +4,7 @@
 
 ![](http://qaiuit270.bkt.clouddn.com/ccy.life-online-brightgreen.svg)
 
-Design & development records of personal site
+Life & development records of personal site
 ##
 
 **技术栈**

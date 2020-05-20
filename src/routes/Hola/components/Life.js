@@ -111,7 +111,7 @@ const More = styled(Motion)`
 // component
 /// /////////////////////////////////////////////
 
-class Design extends Component {
+class Life extends Component {
 
   MapList = (item, i) => {
     return (
@@ -145,4 +145,4 @@ class Design extends Component {
   }
 }
 
-export default Design;
+export default Life;

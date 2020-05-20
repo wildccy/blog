@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a85b90-1b45-40d5-bd7c-e83552b57519" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Image/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Hola/components/Toy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/App/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Hola/components/Design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Hola/components/Life.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Hola/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Hola/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -52,11 +57,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/routes/Hola/components" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/routes/Home/components" />
-      <recent name="$PROJECT_DIR$/src/routes/Home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -120,7 +125,7 @@
       <workItem from="1589794562330" duration="11798000" />
       <workItem from="1589871233317" duration="2416000" />
       <workItem from="1589875103655" duration="2000" />
-      <workItem from="1589875157233" duration="18941000" />
+      <workItem from="1589875157233" duration="23419000" />
     </task>
     <task id="LOCAL-00001" summary="feat(home)：🍃">
       <created>1589192354179</created>
@@ -206,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589969907276</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat(hola)：🥥">
+      <created>1589970720560</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589970720560</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,11 +262,11 @@
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587896513735" />
     <state x="661" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1588223413912" />
-    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589969907060">
+    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589970720429">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>
     <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589192353992" />
-    <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589969907060" />
+    <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589970720429" />
     <state width="1878" height="95" key="GridCell.Tab.0.bottom" timestamp="1589966011546">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>
