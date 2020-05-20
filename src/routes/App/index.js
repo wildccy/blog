@@ -91,6 +91,12 @@ const NAVTABS = {
 
 class App extends Component {
 
+  componentDidMount() {
+    setTimeout(()=>{
+      document.getElementById('music').play()
+    })
+  }
+
   Banner = () =>
     location.pathname === NAVTABS.hola ? (
       <ScrollToHide maxOffset={1000}>
@@ -104,13 +110,16 @@ class App extends Component {
       </ScrollToHide>
     ) : null;
 
-
   render() {
     if (location.pathname === '/') return this.props.children;
+
     return (
       <div>
         <Header tabs={NAVTABS} />
         <this.Banner />
+        <audio id="music" src="
+        http://qaiuit270.bkt.clouddn.com/Lindsey%20Stirling%20-%20Senbonzakura.mp3123
+        " loop />
         <section>
           <Content>{this.props.children}</Content>
         </section>
