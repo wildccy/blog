@@ -93,7 +93,7 @@ class App extends Component {
 
   componentDidMount() {
     setTimeout(()=>{
-      document.getElementById('music').play()
+      // document.getElementById('music').play()
     })
   }
 
@@ -117,12 +117,10 @@ class App extends Component {
       <div>
         <Header tabs={NAVTABS} />
         <this.Banner />
-        <audio id="music" src="
-        http://qaiuit270.bkt.clouddn.com/Lindsey%20Stirling%20-%20Senbonzakura.mp3123
-        " loop />
         <section>
           <Content>{this.props.children}</Content>
         </section>
+        <audio id="music" src="http://qaiuit270.bkt.clouddn.com/Lindsey%20Stirling%20-%20Senbonzakura.mp3123" loop />
       </div>
     );
   }

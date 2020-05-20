@@ -67,7 +67,7 @@ const Title = styled.div`
 
 const Decoration = styled(TitleDecoration)`
   position: absolute;
-  left: -4rem;
+  left: -10rem;
   top: -2rem;
   @media ${Style.media('XL')} {
     left: -1rem;

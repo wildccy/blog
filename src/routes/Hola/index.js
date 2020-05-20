@@ -97,9 +97,10 @@ class Hola extends Component {
     };
 
     return [
+
       <View key="design" name="design">
         <HolaView css={Inner}>
-          <HolaTitle title={'toy'.toUpperCase()} num={'01'} />
+          <HolaTitle title={'toy'.toUpperCase()} num={'02'} />
           <Design data={database.design} />
         </HolaView>
       </View>

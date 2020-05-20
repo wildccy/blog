@@ -36,6 +36,7 @@ export default ({app, history}) => {
             path="/contact"
             component={dynamic({app, component: () => import('./routes/Contact')})}
           />
+          <Route component={dynamic({app, component: () => import('./routes/404')})} />
         </Switch>
       </App>
     </Router>
