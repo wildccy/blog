@@ -19,7 +19,7 @@ import setTitle from '../../utils/setTitle';
 const HolaView = styled(View)`
   background: #fff;
   border-top: solid 0.5px rgba(0, 0, 0, 0.08);
-  padding: 10rem 1rem;
+  padding: 7rem 1rem;
   overflow: hidden;
   min-height: 50vh;
   @media ${Style.media('M')} {
@@ -47,6 +47,7 @@ const Title = styled.div`
   color: transparent;
   -webkit-text-stroke: 1px #222;
   margin-bottom: 8rem;
+
   ${Style.fontSize(6)}
   @media ${Style.media('S')} {
     ${Style.fontSize(5)}
@@ -62,59 +63,42 @@ const database = {
   design : [
     {
       cover: "http://qn.canisminor.cc/project-instantzine.png",
-      title: "须臾映社 Instant-Zine",
-      type : "typography / photography",
+      title: "丐版MVVM框架",
+      type : "vue",
       to   : "/projects/instant-zine"
-    }, {
-      cover: "http://qn.canisminor.cc/2018-08-18-project-panda.png",
-      title: "熊猫金库 3.0",
-      type : "ui design / mobile app",
-      to   : "/blog/posts/20180101_panda"
-    }, {
-      cover: "http://qn.canisminor.cc/2018-08-22-project-3dpanda.png",
-      title: "3D二发熊角色设定",
-      type : "3d character design",
-      to   : "/blog/posts/20171201_3dpanda"
-    }, {
-      cover: "http://qn.canisminor.cc/2018-08-18-project-quanda.png",
-      title: "Quanda ICO",
-      type : "brand design / ui design",
-      to   : "/blog/posts/20180212_quanda"
-    }, {
-      cover: "http://qn.canisminor.cc/2018-08-18-project-hujiang.png",
-      title: "沪江学习 Hujiang",
-      type : "ui design / mobile app",
-      to   : "/blog/posts/20151101_hujiang"
-    }, {
-      cover: "http://qn.canisminor.cc/2018-08-21-project-cc.png",
-      title: "开心词场 Hujiang",
-      type : "ui design / mobile app",
-      to   : "/blog/posts/20150122_cichang"
+    },
+    {
+      cover: "http://qn.canisminor.cc/project-instantzine.png",
+      title: "Fabricjs搭建简易版海报编辑器",
+      type : "fabric",
+      to   : "/projects/instant-zine"
     }
   ]
 }
 
 class Hola extends Component {
+
   componentDidMount() {
     setTitle('Hola');
   }
 
-  Title = ({ title, num }) => {
-    return (
-      <Motion mode="lazyScroll">
-        <section key="title">
-          <Decoration content={[num, null]} />
-          <Title>{title}</Title>
-        </section>
-      </Motion>
-    );
-  };
-
   Body = () => {
+
+    const HolaTitle = ({ title, num }) => {
+      return (
+        <Motion mode="lazyScroll">
+          <section key="title">
+            <Decoration content={[num, null]} />
+            <Title>{title}</Title>
+          </section>
+        </Motion>
+      );
+    };
+
     return [
       <View key="design" name="design">
         <HolaView css={Inner}>
-          {/*<this.Title title={'design'.toUpperCase()} num={'01'} />*/}
+          <HolaTitle title={'design'.toUpperCase()} num={'01'} />
           <Design data={database.design} />
         </HolaView>
       </View>

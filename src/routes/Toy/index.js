@@ -18,7 +18,7 @@ const Desc = styled(Typist)`
 `;
 
 export default () => {
-  setTitle('Projects');
+  setTitle('Toy');
 
   return (
     <View mode="one" type="bottom">

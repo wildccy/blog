@@ -9,9 +9,8 @@ import MediaQuery from 'react-responsive';
 
 const NAVTABS = {
   hola: '/hola',
-  blog: '/blog',
   life: '/life',
-  projects: '/projects',
+  projects: '/toy',
   contact: '/contact'
 };
 

@@ -112,32 +112,28 @@ const More = styled(Motion)`
 /// /////////////////////////////////////////////
 
 class Design extends Component {
-  Showcase = ({ content }) => {
-    const mapList = (item, i) => {
-      return (
-        <Item key={i} to={item.to}>
-          <Cover style={{ backgroundImage: `url(${item.cover})` }} grey />
-          <Mask />
-          <Content>
-            <Split />
-            <div style={{ zIndex: 1 }}>
-              <ProjectTitle>{item.title}</ProjectTitle>
-              <ProjectDesc>{item.type.toUpperCase()}</ProjectDesc>
-            </div>
-          </Content>
-        </Item>
-      );
-    };
-    return <Body>{content.map(mapList)}</Body>;
+
+  MapList = (item, i) => {
+    return (
+      <Item key={i} to={item.to}>
+        <Cover style={{ backgroundImage: `url(${item.cover})` }} grey />
+        <Mask />
+        <Content>
+          <Split />
+          <div style={{ zIndex: 1 }}>
+            <ProjectTitle>{item.title}</ProjectTitle>
+            <ProjectDesc>{item.type.toUpperCase()}</ProjectDesc>
+          </div>
+        </Content>
+      </Item>
+    )
   };
 
   render() {
     return (
       <View>
         <Motion mode="lazyScroll">
-          {(
-            <this.Showcase key="main" content={this.props.data} />
-          )}
+          <Body>{this.props.data.map(this.MapList)}</Body>
         </Motion>
         <More mode="lazyScroll">
           <Link key="link" to="/projects">
