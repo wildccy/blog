@@ -4,17 +4,6 @@ import styled from 'styled-components';
 import MediaQuery from 'react-responsive';
 
 /// /////////////////////////////////////////////
-// config
-/// /////////////////////////////////////////////
-
-const NAVTABS = {
-  hola: '/hola',
-  life: '/life',
-  projects: '/toy',
-  contact: '/contact'
-};
-
-/// /////////////////////////////////////////////
 // styled
 /// /////////////////////////////////////////////
 
@@ -32,6 +21,7 @@ const Cover = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.3;
 `;
 
 const ImageCase = styled(Motion)`
@@ -50,7 +40,7 @@ const ImageCase = styled(Motion)`
   background: ${Style.color.bg};
   z-index: -1;
   > img {
-    height: 100%;
+    width: 100%;
   }
   @media ${Style.media('M')} {
     height: ${document.body.clientHeight}px;
@@ -62,7 +52,7 @@ const Explorer = styled.div`
   align-items: center;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
+  top: 88vh;
   left: 0;
   width: 100%;
   font-family: ${Style.fontFamily.times};
@@ -83,18 +73,34 @@ const Content = styled.div`
   min-height: 100vh;
 `;
 
+
+/// /////////////////////////////////////////////
+// config
+/// /////////////////////////////////////////////
+
+const NAVTABS = {
+  hola: '/hola',
+  life: '/life',
+  toy: '/toy',
+  contact: '/contact'
+};
+
 /// /////////////////////////////////////////////
 // component
 /// /////////////////////////////////////////////
 
 class App extends Component {
 
-  Video = () =>
+  Banner = () =>
     location.pathname === NAVTABS.hola ? (
-      <ScrollToHide maxOffset={500}>
+      <ScrollToHide maxOffset={1000}>
         <ImageCase mode="one" type="alpha" duration={1000}>
-          <img style={{'opacity':0.3}} src="http://qaiuit270.bkt.clouddn.com/faces.jpg" alt=""/>
+          <Cover style={{ backgroundImage: 'url(http://qaiuit270.bkt.clouddn.com/faces.jpg)' }} />
         </ImageCase>
+        <Explorer key="more">
+          <div>Scroll to learn more</div>
+          <Line />
+        </Explorer>
       </ScrollToHide>
     ) : null;
 
@@ -104,9 +110,7 @@ class App extends Component {
     return (
       <div>
         <Header tabs={NAVTABS} />
-        <MediaQuery key="desktop" minWidth={Style.screen.M}>
-          <this.Video />
-        </MediaQuery>
+        <this.Banner />
         <section>
           <Content>{this.props.children}</Content>
         </section>

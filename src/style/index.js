@@ -11,9 +11,9 @@ class Style {
     G: 'rgb(0, 255, 0)',
     B: 'rgb(0, 0, 255)',
     bg: '#fcfcfd',
-    goldDark: '#9d8352',
-    gold: '#bfa677',
-    goldLight: '#e2ca9c',
+    goldDark: 'rgb(230,95,23)',
+    gold: 'rgb(230,140,92)',
+    goldLight: 'rgb(230,185,161)',
   };
 
   gradient = {

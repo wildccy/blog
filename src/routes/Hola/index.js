@@ -6,10 +6,11 @@ import {
   TitleDecoration,
 } from '../../components/index';
 import styled, { css } from 'styled-components';
-import Welcome from './components/Welcome';
-import Design from "./components/Design";
 
 import setTitle from '../../utils/setTitle';
+
+import Welcome from './components/Welcome';
+import Design from "./components/Design";
 
 
 /// /////////////////////////////////////////////
@@ -46,7 +47,7 @@ const Title = styled.div`
   font-weight: 600;
   color: transparent;
   -webkit-text-stroke: 1px #222;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 
   ${Style.fontSize(6)}
   @media ${Style.media('S')} {
@@ -63,13 +64,13 @@ const database = {
   design : [
     {
       cover: "http://qn.canisminor.cc/project-instantzine.png",
-      title: "丐版MVVM框架",
+      title: "测试名称1",
       type : "vue",
       to   : "/projects/instant-zine"
     },
     {
       cover: "http://qn.canisminor.cc/project-instantzine.png",
-      title: "Fabricjs搭建简易版海报编辑器",
+      title: "测试名称2",
       type : "fabric",
       to   : "/projects/instant-zine"
     }
@@ -98,7 +99,7 @@ class Hola extends Component {
     return [
       <View key="design" name="design">
         <HolaView css={Inner}>
-          <HolaTitle title={'design'.toUpperCase()} num={'01'} />
+          <HolaTitle title={'toy'.toUpperCase()} num={'01'} />
           <Design data={database.design} />
         </HolaView>
       </View>

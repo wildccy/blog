@@ -137,7 +137,7 @@ class Design extends Component {
         </Motion>
         <More mode="lazyScroll">
           <Link key="link" to="/projects">
-            <Button>view more projects</Button>
+            <Button>view more toy</Button>
           </Link>
         </More>
       </View>

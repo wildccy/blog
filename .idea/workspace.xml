@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a85b90-1b45-40d5-bd7c-e83552b57519" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/App/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Blog/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Hola/components/Design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Hola/components/Design.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Hola/components/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Hola/components/Welcome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Hola/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Hola/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Projects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Toy/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +124,7 @@
       <workItem from="1589794562330" duration="11798000" />
       <workItem from="1589871233317" duration="2416000" />
       <workItem from="1589875103655" duration="2000" />
-      <workItem from="1589875157233" duration="9349000" />
+      <workItem from="1589875157233" duration="12565000" />
     </task>
     <task id="LOCAL-00001" summary="feat(home)：🍃">
       <created>1589192354179</created>
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589873205272</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat(hola)：">
+      <created>1589951974428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589951974428</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,11 +232,11 @@
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587896513735" />
     <state x="661" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1588223413912" />
-    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589873205098">
+    <state x="571" y="139" key="CommitChangelistDialog2" timestamp="1589951974250">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>
     <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589192353992" />
-    <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589873205098" />
+    <state x="571" y="139" key="CommitChangelistDialog2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589951974250" />
     <state width="1878" height="96" key="GridCell.Tab.0.bottom" timestamp="1589947459087">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>
@@ -258,12 +265,12 @@
       <screen x="0" y="23" width="1920" height="1030" />
     </state>
     <state x="409" y="148" key="SettingsEditor/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589185550628" />
-    <state x="503" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589873209635">
+    <state x="503" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589951979379">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/-155.-1057.1920.1057/0.23.1680.1002@0.23.1680.1002" timestamp="1587901580456" />
     <state x="503" y="272" key="Vcs.Push.Dialog.v2/0.23.1920.1030/1920.23.1680.1027@0.23.1920.1030" timestamp="1589192368292" />
-    <state x="503" y="272" key="Vcs.Push.Dialog.v2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589873209635" />
+    <state x="503" y="272" key="Vcs.Push.Dialog.v2/0.23.1920.1032/1920.23.1680.1027@0.23.1920.1032" timestamp="1589951979379" />
     <state x="100" y="123" width="1720" height="832" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589943938305">
       <screen x="0" y="23" width="1920" height="1032" />
     </state>

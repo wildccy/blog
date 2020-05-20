@@ -35,7 +35,7 @@ const Title = styled.div`
     }
   }
   .Typist {
-    font-size: 1.2vw;
+    font-size: 0.7vw;
     line-height: 1.5 !important;
     text-align: center;
     transition: font-size 0.3s ease;
