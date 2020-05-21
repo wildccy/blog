@@ -1,7 +1,8 @@
+import {Component} from 'react'
 import styled from 'styled-components';
-import { Style, Image } from '../index';
+import {Style, Image} from '../index';
 import MediaQuery from 'react-responsive';
-import { Link } from 'dva/router';
+import {Link} from 'dva/router';
 import PropTypes from 'prop-types';
 
 /// /////////////////////////////////////////////
@@ -153,7 +154,7 @@ const CoverBase = styled.div`
   }
 `;
 
-const CoverBoxS =styled(CoverBase)`
+const CoverBoxS = styled(CoverBase)`
   filter: brightness(90%) contrast(120%) grayscale(100%);
   &:hover {
     filter: brightness(100%) contrast(100%) grayscale(0%);
@@ -175,38 +176,43 @@ const CoverBoxM = styled(CoverBase)`
 // component
 /// /////////////////////////////////////////////
 
-const Post = ({ content, wide = false }) => {
+class Post extends Component {
+  render() {
 
-  const View = wide ? WidePost : SquarePost;
-  const Showcase = wide ? WideCase : SquareCase;
+    const {content, wide = false} = this.props,
 
-  const coverS = content.cover.s ? content.cover.s : content.cover.l + '!s';
-  const coverM = content.cover.m ? content.cover.m : content.cover.l + '!m';
+      View = wide ? WidePost : SquarePost,
+      Showcase = wide ? WideCase : SquareCase,
 
-  const CoverBox = wide ? CoverBoxM : CoverBoxS;
+      coverS = content.cover.s ? content.cover.s : content.cover.l + '!s',
+      coverM = content.cover.m ? content.cover.m : content.cover.l + '!m',
 
-  return (
-    <View to={`/blog/posts/${content.filename}`}>
-      <Showcase>
-        <ImgCase>
-          <MediaQuery minWidth={Style.screen.S}>
-            <CoverBox>
-              <Image src={wide ? coverM : coverS} grey />
-            </CoverBox>
-          </MediaQuery>
-          <MediaQuery maxWidth={Style.screen.S}>
-            <Image src={coverS} grey />
-          </MediaQuery>
-        </ImgCase>
-      </Showcase>
-      <Content>
-        <Title>{content.title}</Title>
-        <Tag>{content.tag.toUpperCase()}</Tag>
-        <Desc>{content.desc}</Desc>
-      </Content>
-    </View>
-  );
-};
+      CoverBox = wide ? CoverBoxM : CoverBoxS;
+
+    return (
+      <View to={`/blog/posts/${content.filename}`}>
+        <Showcase>
+          <ImgCase>
+            <MediaQuery minWidth={Style.screen.S}>
+              <CoverBox>
+                <Image src={wide ? coverM : coverS} grey/>
+              </CoverBox>
+            </MediaQuery>
+            <MediaQuery maxWidth={Style.screen.S}>
+              <Image src={coverS} grey/>
+            </MediaQuery>
+          </ImgCase>
+        </Showcase>
+        <Content>
+          <Title>{content.title}</Title>
+          <Tag>{content.tag.toUpperCase()}</Tag>
+          <Desc>{content.desc}</Desc>
+        </Content>
+      </View>
+    )
+  }
+}
+
 
 Post.propTypes = {
   content: PropTypes.object,

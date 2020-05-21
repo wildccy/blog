@@ -1,4 +1,4 @@
-import {Component} from 'react';
+import {Component, forwardRef} from 'react';
 import {View, Post, Motion, Header} from '../../components';
 import styled from 'styled-components';
 import setTitle from '../../utils/setTitle';
@@ -87,18 +87,15 @@ class Life extends Component {
     setTitle('Blog');
   }
 
+  Main = (post, i) => (<Post key={i}  wide={1 && i === 0} content={post}/>);
+
   render() {
-    const first = 1;
     return [
       <Header.PlaceHolder key="header"/>,
       <View key="view">
         <Page>
           <List duration={500} interval={200}>
-            {
-              database['toc'].map((post, i) => (
-                  <Post key={i} wide={first && i === 0} content={post}/>
-                ))
-            }
+            {database['toc'].map(this.Main)}
           </List>
         </Page>
       </View>,

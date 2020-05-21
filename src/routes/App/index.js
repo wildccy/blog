@@ -79,8 +79,8 @@ const Content = styled.div`
 
 const NAVTABS = {
   hola: '/Hola',
-  life: '/life',
   toy: '/toy',
+  life: '/life',
   contact: '/contact'
 };
 
