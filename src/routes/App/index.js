@@ -79,7 +79,7 @@ const Content = styled.div`
 /// /////////////////////////////////////////////
 
 const NAVTABS = {
-  hola: '/hola',
+  hola: '/Hola',
   life: '/life',
   toy: '/toy',
   contact: '/contact'

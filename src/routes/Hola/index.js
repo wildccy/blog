@@ -145,7 +145,7 @@ class Hola extends Component {
     return [
       <View key="toy" name="toy">
         <HolaView css={Inner}>
-          <HolaTitle title={'life'.toUpperCase()} num={'01'} />
+          <HolaTitle title={'toy'.toUpperCase()} num={'01'} />
           <Life data={database.design} />
         </HolaView>
       </View>,
