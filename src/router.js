@@ -28,7 +28,7 @@ export default ({app, history}) => {
           />
           <Route
             exact
-            path="/projects"
+            path="/toy"
             component={dynamic({app, component: () => import('./routes/Toy')})}
           />
           <Route

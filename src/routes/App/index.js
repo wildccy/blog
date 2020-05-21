@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import { Header,Style, Motion, ScrollToHide} from '../../components';
 import styled from 'styled-components';
-import MediaQuery from 'react-responsive';
 
 /// /////////////////////////////////////////////
 // styled
@@ -121,7 +120,7 @@ class App extends Component {
         <section>
           <Content>{this.props.children}</Content>
         </section>
-        <audio id="music" src="http://qaiuit270.bkt.clouddn.com/Lindsey%20Stirling%20-%20Senbonzakura.mp3123" loop />
+        <audio id="music" src="http://qaiuit270.bkt.clouddn.com/Lindsey%20Stirling%20-%20Senbonzakura.mp3" loop />
       </div>
     );
   }

@@ -64,13 +64,13 @@ const Title = styled.div`
 const database = {
   design : [
     {
-      cover: "http://qn.canisminor.cc/project-instantzine.png",
+      cover: "http://qaiuit270.bkt.clouddn.com/timg%20%281%29.jpeg",
       title: "测试名称1",
       type : "vue",
       to   : "/projects/instant-zine"
     },
     {
-      cover: "http://qn.canisminor.cc/project-instantzine.png",
+      cover: "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
       title: "测试名称2",
       type : "fabric",
       to   : "/projects/instant-zine"

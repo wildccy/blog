@@ -11,4 +11,4 @@ export { default as Icon } from './Icon';
 export { default as TitleDecoration } from './TitleDecoration';
 export { default as ScrollToHide } from './ScrollToHide';
 export { default as Image } from './Image';
-
+export { default as Post } from './Post';
