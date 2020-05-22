@@ -133,7 +133,7 @@ class App extends Component {
         <section>
           <Content>{this.props.children}</Content>
         </section>
-        <audio id="music" src="http://qaiuit270.bkt.clouddn.com/Lindsey%20Stirling%20-%20Senbonzakura.mp3" loop />
+        <audio id="music" src="http://qaiuit270.bkt.clouddn.com/Rezz%20-%20Edge.mp3" loop />
         <Footer key="footer" data={this.footer} />
       </div>
     );

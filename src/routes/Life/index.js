@@ -33,9 +33,9 @@ const database = {
       "tag": "life",
       "desc": "2019.10.01-2019.10.09",
       "cover": {
-        "s": "http://qn.canisminor.cc/pattay-cover-s.jpg",
-        "m": "http://qn.canisminor.cc/pattay-cover-m.jpg",
-        "l": "http://qn.canisminor.cc/pattay-cover-l.jpg"
+        "s": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
+        "m": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
+        "l": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
       },
       "date": "2019-10-10"
     }, {
@@ -44,9 +44,9 @@ const database = {
       "tag": "life",
       "desc": "2019.10.01-2019.10.09",
       "cover": {
-        "s": "http://qn.canisminor.cc/pattay-cover-s.jpg",
-        "m": "http://qn.canisminor.cc/pattay-cover-m.jpg",
-        "l": "http://qn.canisminor.cc/pattay-cover-l.jpg"
+        "s": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
+        "m": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
+        "l": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
       },
       "date": "2019-10-10"
     }, {
@@ -55,9 +55,9 @@ const database = {
       "tag": "life",
       "desc": "2019.10.01-2019.10.09",
       "cover": {
-        "s": "http://qn.canisminor.cc/pattay-cover-s.jpg",
-        "m": "http://qn.canisminor.cc/pattay-cover-m.jpg",
-        "l": "http://qn.canisminor.cc/pattay-cover-l.jpg"
+        "s": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
+        "m": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
+        "l": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
       },
       "date": "2019-10-10"
     }, {
@@ -66,9 +66,9 @@ const database = {
       "tag": "life",
       "desc": "2019.10.01-2019.10.09",
       "cover": {
-        "s": "http://qn.canisminor.cc/pattay-cover-s.jpg",
-        "m": "http://qn.canisminor.cc/pattay-cover-m.jpg",
-        "l": "http://qn.canisminor.cc/pattay-cover-l.jpg"
+        "s": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
+        "m": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
+        "l": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
       },
       "date": "2019-10-10"
     }], "page": 1, "pages": 5

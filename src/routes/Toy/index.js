@@ -163,17 +163,17 @@ const Button = styled.div`
 
 const data = {
   "main": [{
-    "cover": "http://qn.canisminor.cc/2018-08-18-project-hujiang.png",
+    "cover": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
     "title": "沪江学习 Hujiang",
     "type": "ui design / mobile app",
     "to": "/blog/posts/20151101_hujiang"
   }, {
-    "cover": "http://qn.canisminor.cc/2018-08-21-project-cc.png",
+    "cover": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
     "title": "开心词场 Hujiang",
     "type": "ui design / mobile app",
     "to": "/blog/posts/20150122_cichang"
   }, {
-    "cover": "http://qn.canisminor.cc/2018-08-20-project-d.png",
+    "cover": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
     "title": "沪江小D Hujiang",
     "type": "ui design / mobile app",
     "to": "/blog/posts/20140624_d"
