@@ -49,7 +49,7 @@ const BlackBtn = styled(Base)`
   color: #fff;
 `;
 
-const WhiteBtn = styled(Base)`
+const WhiteBtn = styled(Btn)`
   border-color: #fff;
   color: #fff;
   &:before {

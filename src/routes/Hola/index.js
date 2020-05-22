@@ -10,9 +10,9 @@ import styled, { css } from 'styled-components';
 import setTitle from '../../utils/setTitle';
 
 import Welcome from './components/Welcome';
-import Life from "./components/Life";
-import Toy from './components/Toy'
-
+import Toy from "./components/Toy";
+import Life from './components/Life'
+import Contact from "./components/Contact";
 
 /// /////////////////////////////////////////////
 // styled
@@ -78,47 +78,46 @@ const database = {
   ],
   coding : [
     {
-      cover: "/img/coding-anto.png",
-      title: "anto",
-      desc : "🔵 Sketch Tools for AFUX",
-      type : "sketch plugin",
-      href : "https://github.com/canisminor1990/anto"
-    },
-    {
-      cover: "/img/coding-name.png",
-      title: "sketch-name-organizer",
-      desc :
-        "🖌 Rename and sort artboards based on their x and y position; Rename layers based on their Style and Symbol.",
-      type : "sketch plugin",
-      href : "https://github.com/canisminor1990/sketch-name-organizer"
-    },
-    {
-      cover: "/img/coding-pand.png",
-      title: "panda-design",
-      desc : "🐼 Panda Design React UI Components",
-      type : "react ui-kit",
-      href : "https://github.com/PandaUED/panda-design"
-    },
-    {
-      cover: "/img/coding-anto.png",
-      title: "anto-diff",
-      desc : "🔵 Sketch diff tool",
-      type : "electron",
-      href : "https://github.com/canisminor1990/anto-diff"
-    },
-    {
-      cover: "/img/coding-bilibili.png",
-      title: "bilibili-client",
-      desc : "📺 Bilibili Mini-Client # Mac/Win",
-      type : "electron",
-      href : "https://github.com/canisminor1990/bilibili-client"
-    },
-    {
-      cover: "/img/coding-ffxiv.png",
+      cover: "http://qn.canisminor.cc/amoy-cover-s.jpg",
       title: "ffxiv-cmskin",
       desc : "🌱 CanisMinor ActSkin - FFXIV",
       type : "final fantasy xiv",
-      href : "https://github.com/canisminor1990/ffxiv-cmskin"
+      href : "http://qn.canisminor.cc/amoy-cover-s.jpg"
+    },
+    {
+      cover: "http://qn.canisminor.cc/amoy-cover-s.jpg",
+      title: "ffxiv-cmskin",
+      desc : "🌱 CanisMinor ActSkin - FFXIV",
+      type : "final fantasy xiv",
+      href : "http://qn.canisminor.cc/amoy-cover-s.jpg"
+    },
+    {
+      cover: "http://qn.canisminor.cc/amoy-cover-s.jpg",
+      title: "ffxiv-cmskin",
+      desc : "🌱 CanisMinor ActSkin - FFXIV",
+      type : "final fantasy xiv",
+      href : "http://qn.canisminor.cc/amoy-cover-s.jpg"
+    },
+    {
+      cover: "http://qn.canisminor.cc/amoy-cover-s.jpg",
+      title: "ffxiv-cmskin",
+      desc : "🌱 CanisMinor ActSkin - FFXIV",
+      type : "final fantasy xiv",
+      href : "http://qn.canisminor.cc/amoy-cover-s.jpg"
+    },
+    {
+      cover: "http://qn.canisminor.cc/amoy-cover-s.jpg",
+      title: "ffxiv-cmskin",
+      desc : "🌱 CanisMinor ActSkin - FFXIV",
+      type : "final fantasy xiv",
+      href : "http://qn.canisminor.cc/amoy-cover-s.jpg"
+    },
+    {
+      cover: "http://qn.canisminor.cc/amoy-cover-s.jpg",
+      title: "ffxiv-cmskin",
+      desc : "🌱 CanisMinor ActSkin - FFXIV",
+      type : "final fantasy xiv",
+      href : "http://qn.canisminor.cc/amoy-cover-s.jpg"
     }
   ]
 };
@@ -146,15 +145,16 @@ class Hola extends Component {
       <View key="toy" name="toy">
         <HolaView css={Inner}>
           <HolaTitle title={'toy'.toUpperCase()} num={'01'} />
-          <Life data={database.design} />
+          <Toy data={database.design} />
         </HolaView>
       </View>,
       <View key="life" name="life">
         <HolaView css={Inner}>
           <HolaTitle title={'life'.toUpperCase()} num={'02'} />
-          <Toy data={database.coding} />
+          <Life data={database.coding} />
         </HolaView>
-      </View>
+      </View>,
+      <Contact key="contact" />
     ]
   };
 

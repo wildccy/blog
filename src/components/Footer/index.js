@@ -50,8 +50,8 @@ export default ({ data, ...other }) => {
     <View css={Inner} key="footer" style={{ background: '#fff' }} {...other}>
       <Icon size={1.5} type="logo-text" />
       <Copyright>
-        Copyright © 1990-
-        {new Date().getFullYear()} CanisMinor. 京ICP备16055942号
+        Copyright © 2020.1-
+        {`${new Date().getFullYear()}.${new Date().getMonth()+1}`}
       </Copyright>
       <Social>{data.map(mapFooter)}</Social>
     </View>

@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { Header,Style, Motion, ScrollToHide} from '../../components';
+import { Header,Style, Motion, ScrollToHide, Footer} from '../../components';
 import styled from 'styled-components';
 
 /// /////////////////////////////////////////////
@@ -78,7 +78,7 @@ const Content = styled.div`
 /// /////////////////////////////////////////////
 
 const NAVTABS = {
-  hola: '/Hola',
+  hola: '/hola',
   toy: '/toy',
   life: '/life',
   contact: '/contact'
@@ -97,18 +97,31 @@ class App extends Component {
     })
   }
 
+  footer = [
+    { type: 'social-wechat', href: '/contact/qrcode' },
+    {
+      type: 'social-linkedin',
+      href: 'https://www.linkedin.com/in/canisminor/',
+    },
+    { type: 'social-github', href: 'https://github.com/canisminor1990' },
+    { type: 'social-rss', href: 'https://canisminor.cc/rss.xml' },
+    { type: 'social-mail', href: 'mailto:i@canisminor.cc' },
+  ];
+
   Banner = () =>
     location.pathname === NAVTABS.hola ? (
-      <ScrollToHide maxOffset={1000}>
-        <ImageCase mode="one" type="alpha" duration={1000}>
-          <Cover style={{ backgroundImage: 'url(http://qaiuit270.bkt.clouddn.com/faces.jpg)' }} />
-        </ImageCase>
-        <Explorer key="more">
-          <div>Scroll to learn more</div>
-          <Line />
-        </Explorer>
-      </ScrollToHide>
-    ) : null;
+    <ScrollToHide maxOffset={1000}>
+      <ImageCase mode="one" type="alpha" duration={1000}>
+        <Cover style={{ backgroundImage: 'url(http://qaiuit270.bkt.clouddn.com/faces.jpg)' }} />
+      </ImageCase>
+      <Explorer key="more">
+        <div>Scroll to learn more</div>
+        <Line />
+      </Explorer>
+    </ScrollToHide>
+  ) : null;
+
+
 
   render() {
     if (location.pathname === '/') return this.props.children;
@@ -121,6 +134,7 @@ class App extends Component {
           <Content>{this.props.children}</Content>
         </section>
         <audio id="music" src="http://qaiuit270.bkt.clouddn.com/Lindsey%20Stirling%20-%20Senbonzakura.mp3" loop />
+        <Footer key="footer" data={this.footer} />
       </div>
     );
   }

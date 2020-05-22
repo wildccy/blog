@@ -1,79 +1,111 @@
 import styled from 'styled-components';
-import { Style, Image, Motion, Button } from '../../../components';
+import { Style, Motion, Button, View } from '../../../components';
 import { Component } from 'react';
+import { Link } from 'dva/router';
 
 /// /////////////////////////////////////////////
 // styled
 /// /////////////////////////////////////////////
 
-const Main = styled.div`
+const Body = styled(View.Row)`
+  max-width: 1024px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 4rem;
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  padding: 0 3rem 3rem;
-  @media ${Style.media('S')} {
-    padding: 0 0 3rem;
+  position: relative;
+  @media ${Style.media('M')} {
+    padding: 0 1rem;
   }
 `;
 
-const Card = styled.a`
-  display: flex;
-  min-width: 20rem;
+const Item = styled(Link)`
   flex: 1;
-  padding: 1rem;
-  margin: 0.5rem;
-  transition: all 0.5s ${Style.ease.normal};
-  border-radius: 0.25rem;
-  &:hover {
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.05);
-    transform: scale(1.1);
+  min-width: 50%;
+  display: block;
+  position: relative;
+  @media ${Style.media('M')} {
+    width: 100%;
   }
 `;
 
-const Cover = styled(Image)`
-  width: 3rem;
-  height: 3rem;
+const Cover = styled.div`
+  display: block;
+  width: 100%;
+  position: relative;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 6rem;
+  transition: all 0.5s ease-in-out;
+  filter: brightness(120%) contrast(120%) grayscale(100%);
+  ${Item}:hover & {
+    filter: brightness(100%) contrast(100%) grayscale(0%);
+  }
+`;
+
+const Mask = styled.span`
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  transition: all 0.5s ease-in-out;
+  ${Item}:hover & {
+    transform: translate3d(100%, 0, 0);
+  }
 `;
 
 const Content = styled.div`
-  margin-left: 1rem;
-  flex: 1;
-`;
-
-const Title = styled.div`
-  font-weight: 500;
-  ${Style.fontSize(1)};
-  margin-bottom: 0.5rem;
-`;
-
-const Desc = styled.div`
-  ${Style.fontSize(-1, true)};
-  margin-bottom: 0.5rem;
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-`;
-
-const Type = styled.div`
-  ${Style.fontSize(-2)};
-  color: ${Style.color.goldDark};
-  > span {
-    margin-left: 0.5rem;
-    font-family: ${Style.fontFamily.times};
-    color: #888;
-    font-style: italic;
-  }
-`;
-
-const MotionView = styled(Motion)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
 `;
 
+const Split = styled.div`
+  height: 1px;
+  background: #222;
+  width: 0;
+  margin-right: 3rem;
+  transition: all 0.5s ${Style.ease.normal};
+  ${Item}:hover & {
+    background: #fff;
+    width: 3rem;
+    margin-right: 1.5rem;
+  }
+`;
+
+const ProjectTitle = styled.div`
+  font-weight: 600;
+  transition: all 0.5s ${Style.ease.normal};
+  ${Style.fontSize(1, true)};
+  ${Item}:hover & {
+    color: #fff;
+  }
+`;
+
+const ProjectDesc = styled.div`
+  ${Style.fontSize(-2, true)};
+  transition: all 0.5s ${Style.ease.normal};
+  letter-spacing: 0.06em;
+  ${Item}:hover & {
+    color: #fff;
+  }
+`;
+
+const More = styled(Motion)`
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+`;
 
 /// /////////////////////////////////////////////
 // component
@@ -81,32 +113,36 @@ const MotionView = styled(Motion)`
 
 class Toy extends Component {
 
-  MapMain = (item, i) => (
-    <Card key={i} href={item.href} target="_blank" rel="noopener noreferrer">
-      <Cover src={item.cover} />
-      <Content>
-        <Title>{item.title}</Title>
-        <Desc>{item.desc}</Desc>
-        <Type>
-          -<span>{item.type}</span>
-        </Type>
-      </Content>
-    </Card>
-  );
-
+  MapList = (item, i) => {
+    return (
+      <Item key={i} to={item.to}>
+        <Cover style={{ backgroundImage: `url(${item.cover})` }} grey />
+        <Mask />
+        <Content>
+          <Split />
+          <div style={{ zIndex: 1 }}>
+            <ProjectTitle>{item.title}</ProjectTitle>
+            <ProjectDesc>{item.type.toUpperCase()}</ProjectDesc>
+          </div>
+        </Content>
+      </Item>
+    )
+  };
 
   render() {
     return (
-      <div>
-        <MotionView mode="lazyScroll">
-          <Main>{this.props.data.map(this.MapMain)}</Main>
-        </MotionView>
-        <MotionView mode="lazyScroll">
-          <Button>view more repos</Button>
-        </MotionView>
-      </div>
+      <View>
+        <Motion mode="lazyScroll">
+          <Body>{this.props.data.map(this.MapList)}</Body>
+        </Motion>
+        <More mode="lazyScroll">
+          <Link key="link" to="/toy">
+            <Button>view more toy</Button>
+          </Link>
+        </More>
+      </View>
     );
   }
 }
 
-export default Toy
+export default Toy;
