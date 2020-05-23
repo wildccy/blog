@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a85b90-1b45-40d5-bd7c-e83552b57519" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Hola/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/example.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/App/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Hola/components/Toy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Hola/components/Toy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Hola/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Hola/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Life/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Life/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Toy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Toy/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/request.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +72,19 @@
       <recent name="$PROJECT_DIR$/src/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start">
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings>
@@ -126,6 +145,10 @@
       <workItem from="1589875157233" duration="32251000" />
       <workItem from="1590052274226" duration="8283000" />
       <workItem from="1590118284290" duration="245000" />
+      <workItem from="1590238754502" duration="1000" />
+      <workItem from="1590238877033" duration="1415000" />
+      <workItem from="1590242416767" duration="7506000" />
+      <workItem from="1590253928360" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="feat(home)：🍃">
       <created>1589192354179</created>

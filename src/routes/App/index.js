@@ -79,8 +79,8 @@ const Content = styled.div`
 
 const NAVTABS = {
   hola: '/hola',
-  toy: '/toy',
   life: '/life',
+  toy: '/toy',
   contact: '/contact'
 };
 
@@ -93,7 +93,7 @@ class App extends Component {
 
   componentDidMount() {
     setTimeout(()=>{
-      // document.getElementById('music').play()
+      //document.getElementById('music').play()
     })
   }
 
@@ -115,7 +115,7 @@ class App extends Component {
         <Cover style={{ backgroundImage: 'url(http://qaiuit270.bkt.clouddn.com/faces.jpg)' }} />
       </ImageCase>
       <Explorer key="more">
-        <div>Scroll to learn more</div>
+        <div>Scroll to know more</div>
         <Line />
       </Explorer>
     </ScrollToHide>

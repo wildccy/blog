@@ -5,38 +5,24 @@ export default ({app, history}) => {
 
   history.listen(() => window.scrollTo(0, 0));
 
-  const App = dynamic({app, component: () => import('./routes/App')});
+  const App = dynamic({app, component: () => import('./routes/App')}),
+    Init = dynamic({app, component: () => import('./routes/Init')}),
+    Hola = dynamic({app, component: () => import('./routes/Hola/index')}),
+    Life = dynamic({app, component: () => import('./routes/Life')}),
+    Toy = dynamic({app, component: () => import('./routes/Toy')}),
+    Contact = dynamic({app, component: () => import('./routes/Contact')}),
+    Error = dynamic({app, component: () => import('./routes/404')});
 
   return (
     <Router history={history}>
       <App>
         <Switch>
-          <Route
-            exact
-            path="/"
-            component={dynamic({app, component: () => import('./routes/Init')})}
-          />
-          <Route
-            exact
-            path="/hola"
-            component={dynamic({app, component: () => import('./routes/Hola/index')})}
-          />
-          <Route
-            exact
-            path="/life"
-            component={dynamic({app, component: () => import('./routes/Life')})}
-          />
-          <Route
-            exact
-            path="/toy"
-            component={dynamic({app, component: () => import('./routes/Toy')})}
-          />
-          <Route
-            exact
-            path="/contact"
-            component={dynamic({app, component: () => import('./routes/Contact')})}
-          />
-          <Route component={dynamic({app, component: () => import('./routes/404')})} />
+          <Route exact path="/" component={Init}/>
+          <Route exact path="/hola" component={Hola}/>
+          <Route exact path="/life" component={Life}/>
+          <Route exact path="/toy" component={Toy}/>
+          <Route exact path="/contact" component={Contact}/>
+          <Route component={Error}/>
         </Switch>
       </App>
     </Router>

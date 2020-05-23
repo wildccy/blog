@@ -8,19 +8,20 @@ import {
 import styled, { css } from 'styled-components';
 
 import setTitle from '../../utils/setTitle';
-
 import Welcome from './components/Welcome';
 import Toy from "./components/Toy";
 import Life from './components/Life'
 import Contact from "./components/Contact";
+import { connect } from 'dva';
 
 /// /////////////////////////////////////////////
 // styled
 /// /////////////////////////////////////////////
 
 const HolaView = styled(View)`
+ width: 100%;
   background: #fff;
-  border-top: solid 0.5px rgba(0, 0, 0, 0.08);
+   border-top: solid 0.5px rgba(0, 0, 0, 0.08);
   padding: 7rem 1rem 3rem 1rem;
   overflow: hidden;
   min-height: 50vh;
@@ -61,71 +62,24 @@ const Title = styled.div`
 /// /////////////////////////////////////////////
 
 
-const database = {
-  design : [
-    {
-      cover: "http://qaiuit270.bkt.clouddn.com/timg%20%281%29.jpeg",
-      title: "测试名称1",
-      type : "vue",
-      to   : "/projects/instant-zine"
-    },
-    {
-      cover: "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-      title: "测试名称2",
-      type : "fabric",
-      to   : "/projects/instant-zine"
-    }
-  ],
-  coding : [
-    {
-      cover: "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-      title: "ffxiv-cmskin",
-      desc : "🌱 测试名称2",
-      type : "final fantasy xiv",
-      href : "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
-    },
-    {
-      cover: "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-      title: "ffxiv-cmskin",
-      desc : "🌱 测试名称2",
-      type : "final fantasy xiv",
-      href : "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
-    },
-    {
-      cover: "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-      title: "ffxiv-cmskin",
-      desc : "🌱 测试名称2",
-      type : "final fantasy xiv",
-      href : "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
-    },
-    {
-      cover: "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-      title: "ffxiv-cmskin",
-      desc : "🌱 测试名称2",
-      type : "final fantasy xiv",
-      href : "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
-    },
-    {
-      cover: "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-      title: "ffxiv-cmskin",
-      desc : "🌱 测试名称2",
-      type : "final fantasy xiv",
-      href : "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
-    },
-    {
-      cover: "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-      title: "ffxiv-cmskin",
-      desc : "🌱 测试名称2",
-      type : "final fantasy xiv",
-      href : "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg"
-    }
-  ]
+const State = state => {
+  return {
+    hola: state.hola
+  };
 };
+
+const Dispatch = dispatch => ({
+  getHola() {
+    dispatch({ type: 'information/hola' });
+  },
+});
+
 
 class Hola extends Component {
 
   componentDidMount() {
     setTitle('Hola');
+    this.props.getHola();
   }
 
   Body = () => {
@@ -142,18 +96,14 @@ class Hola extends Component {
     };
 
     return [
-      <View key="toy" name="toy">
-        <HolaView css={Inner}>
-          <HolaTitle title={'toy'.toUpperCase()} num={'01'} />
-          <Toy data={database.design} />
-        </HolaView>
-      </View>,
-      <View key="life" name="life">
-        <HolaView css={Inner}>
-          <HolaTitle title={'life'.toUpperCase()} num={'02'} />
-          <Life data={database.coding} />
-        </HolaView>
-      </View>,
+      <HolaView key="toy" name="toy" css={Inner}>
+        <HolaTitle title={'toy'.toUpperCase()} num={'01'} />
+        <Toy data={this.props.hola.toy} />
+      </HolaView>,
+      <HolaView key="life" name="life" css={Inner}>
+        <HolaTitle title={'life'.toUpperCase()} num={'02'} />
+        <Life data={this.props.hola .life} />
+      </HolaView>,
       <Contact key="contact" />
     ]
   };
@@ -167,4 +117,7 @@ class Hola extends Component {
   }
 }
 
-export default Hola
+export default connect(
+  State,
+  Dispatch
+)(Hola);

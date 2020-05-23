@@ -8,7 +8,6 @@ import { Link } from 'dva/router';
 /// /////////////////////////////////////////////
 
 const Body = styled(View.Row)`
-  max-width: 1024px;
   overflow: hidden;
   margin: 0 auto;
   padding: 0 4rem;
@@ -103,7 +102,7 @@ const ProjectDesc = styled.div`
 const More = styled(Motion)`
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
   width: 100%;
 `;
 
