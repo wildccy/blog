@@ -10,7 +10,7 @@ export default ({app, history}) => {
     Hola = dynamic({app, component: () => import('./routes/Hola/index')}),
     Life = dynamic({app, component: () => import('./routes/Life')}),
     Toy = dynamic({app, component: () => import('./routes/Toy')}),
-    Contact = dynamic({app, component: () => import('./routes/Contact')}),
+    Contact = dynamic({app, component: () => import('./routes/Contact/index')}),
     Error = dynamic({app, component: () => import('./routes/404')});
 
   return (

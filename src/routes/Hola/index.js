@@ -1,18 +1,19 @@
-import { Component } from 'react';
+import {Component} from 'react';
 import {
   Style,
   View,
+  Loading,
   Motion,
   TitleDecoration,
 } from '../../components/index';
-import styled, { css } from 'styled-components';
+import styled, {css} from 'styled-components';
 
 import setTitle from '../../utils/setTitle';
 import Welcome from './components/Welcome';
 import Toy from "./components/Toy";
 import Life from './components/Life'
 import Contact from "./components/Contact";
-import { connect } from 'dva';
+import {connect} from 'dva';
 
 /// /////////////////////////////////////////////
 // styled
@@ -61,20 +62,6 @@ const Title = styled.div`
 // component
 /// /////////////////////////////////////////////
 
-
-const State = state => {
-  return {
-    hola: state.hola
-  };
-};
-
-const Dispatch = dispatch => ({
-  getHola() {
-    dispatch({ type: 'information/hola' });
-  },
-});
-
-
 class Hola extends Component {
 
   componentDidMount() {
@@ -83,41 +70,53 @@ class Hola extends Component {
   }
 
   Body = () => {
-
-    const HolaTitle = ({ title, num }) => {
-      return (
+    const {toy, life} = this.props.hola,
+      HolaTitle = ({title, num}) => (
         <Motion mode="lazyScroll">
           <section key="title">
-            <Decoration content={[num, null]} />
+            <Decoration content={[num, null]}/>
             <Title>{title}</Title>
           </section>
         </Motion>
       );
-    };
 
-    return [
+    return this.props.loading ? (
+      <HolaView css={Inner}>
+        <Loading/>
+      </HolaView>
+    ) : [
       <HolaView key="toy" name="toy" css={Inner}>
-        <HolaTitle title={'toy'.toUpperCase()} num={'01'} />
-        <Toy data={this.props.hola.toy} />
+        <HolaTitle title={'toy'.toUpperCase()} num={'01'}/>
+        <Toy data={toy}/>
       </HolaView>,
       <HolaView key="life" name="life" css={Inner}>
-        <HolaTitle title={'life'.toUpperCase()} num={'02'} />
-        <Life data={this.props.hola .life} />
+        <HolaTitle title={'life'.toUpperCase()} num={'02'}/>
+        <Life data={life}/>
       </HolaView>,
-      <Contact key="contact" />
+      <Contact key="contact"/>
     ]
   };
 
 
   render() {
     return [
-      <Welcome key="welcome" />,
-      <this.Body key="body" />
+      <Welcome key="welcome"/>,
+      <this.Body key="body"/>
     ];
   }
 }
 
 export default connect(
-  State,
-  Dispatch
+  state => {
+    const {information} = state;
+    return {
+      hola: information.hola,
+      loading: _.size(information.hola) === 0
+    }
+  },
+  dispatch => ({
+    getHola() {
+      dispatch({type: 'information/hola'});
+    }
+  })
 )(Hola);

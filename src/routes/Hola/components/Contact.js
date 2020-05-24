@@ -58,13 +58,15 @@ export default class extends Component {
   render() {
     return (
       <Motion mode="lazyScroll">
-        <ContactView key="contact" css={Inner}>
-          <Title>LET'S TALK</Title>
-          <Desc>I am available for freelance work 😉</Desc>
-          <Link to="/contact">
-            <Button type="white">contact me</Button>
-          </Link>
-        </ContactView>
+        <div>
+          <ContactView key="contact" css={Inner}>
+            <Title>LET'S TALK</Title>
+            <Desc>I am available for freelance work 😉</Desc>
+            <Link to="/contact">
+              <Button type="white">contact me</Button>
+            </Link>
+          </ContactView>
+        </div>
       </Motion>
     );
   }

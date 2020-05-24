@@ -13,4 +13,9 @@ export { default as ScrollToHide } from './ScrollToHide';
 export { default as Image } from './Image';
 export { default as Post } from './Post';
 export { default as Footer } from './Footer';
+export { default as Loading } from './Loading';
+export { default as Input } from './Input';
+export { default as Modal } from './Modal';
+
+
 

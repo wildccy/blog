@@ -1,12 +1,14 @@
-import {Component} from 'react';
+  import {Component} from 'react';
 import styled from 'styled-components';
 import {
   Style,
   Motion,
-  Header
+  Header,
+  Loading
 } from '../../components';
 import {Link} from 'dva/router';
 import setTitle from '../../utils/setTitle';
+import {connect} from 'dva'
 
 /// /////////////////////////////////////////////
 // styled
@@ -159,27 +161,6 @@ const Button = styled.div`
   }
 `;
 
-
-
-const data = {
-  "main": [{
-    "cover": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-    "title": "沪江学习 Hujiang",
-    "type": "ui design / mobile app",
-    "to": "/blog/posts/20151101_hujiang"
-  }, {
-    "cover": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-    "title": "开心词场 Hujiang",
-    "type": "ui design / mobile app",
-    "to": "/blog/posts/20150122_cichang"
-  }, {
-    "cover": "http://qaiuit270.bkt.clouddn.com/u%3D3823497673%2C755702841%26fm%3D26%26gp%3D0.jpg",
-    "title": "沪江小D Hujiang",
-    "type": "ui design / mobile app",
-    "to": "/blog/posts/20140624_d"
-  }]
-}
-
 /// /////////////////////////////////////////////
 // component
 /// /////////////////////////////////////////////
@@ -187,10 +168,11 @@ const data = {
 class Toy extends Component {
   componentDidMount() {
     setTitle('Projects');
+    this.props.getToy()
   }
 
   MapList = (item, i) => {
-    let num = (i + 1).toString();
+    const num = (i + 1).toString();
     return (
       <Item key={i} to={item.to}>
         <Cover style={{backgroundImage: `url(${item.cover})`}} grey/>
@@ -210,20 +192,35 @@ class Toy extends Component {
     );
   };
 
-  Main = () => (
-    <div>
+  Main = ({toc}) => (
+    this.props.loading ?  <Loading/> :<div>
       <Body delay={200} duration={1000} interval={200}>
-        {data.main.map(this.MapList)}
+        {toc.map(this.MapList)}
       </Body>
     </div>
   );
 
   render() {
+    const {toc} = this.props.toy;
+    console.log(toc);
     return [
       <Header.PlaceHolder key="header"/>,
-      <this.Main key="main"/>,
+      <this.Main key="main" toc={toc}/>,
     ];
   }
 }
 
-export default Toy
+  export default connect(
+    state =>{
+      const {information:{toy}} = state;
+      return {
+        toy,
+        loading: _.size(toy['toc']) === 0
+      }
+    },
+    dispatch => ({
+      getToy() {
+        dispatch({type: 'information/toy'});
+      }
+    })
+  )(Toy)
