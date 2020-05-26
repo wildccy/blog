@@ -1,4 +1,4 @@
-# ccy
+# ccy（偶尔建设中）
 
 ![](http://qaiuit270.bkt.clouddn.com/faces.jpg)
 
@@ -16,6 +16,4 @@ Toy & development records of personal site
 ## Links
 
 - 🥥 <https://ccy.life> 
-
-# 正在建设中
 
