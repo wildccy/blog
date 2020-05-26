@@ -9,7 +9,7 @@ Toy & development records of personal site
 
 **技术栈**
 
-- `React` + `Redux` ( `dva` ) + `Immutable` + `Styled Components`
+- `React(公司项目技术栈为Vue 用它是想回忆一下🤠)` + `Redux` ( `dva` ) + `Immutable` + `Styled Components`
 
 - `Egg` + `MySQL`
 
