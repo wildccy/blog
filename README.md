@@ -7,12 +7,14 @@
 Toy & development records of personal site
 ##
 
+# 建设中
+
 **技术栈**
 
 - `React` + `Redux` ( `dva` ) + `Immutable` + `Styled Components`
 
-- `Koa` + `MySQL`
+- `Egg` + `MySQL`
 
 ## Links
 
-- 🥥 <http://ccy.life>
+- 🥥 <https://ccy.life> 
