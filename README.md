@@ -15,6 +15,7 @@ Toy & development records of personal site
 
 ## Links
 
+- 🥥 <https://ccy.life> 
+
 # 正在建设中
 
-- 🥥 <https://ccy.life> 
